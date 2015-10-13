@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8S9-8e-FYt"/>
+                        <viewControllerLayoutGuide type="bottom" id="XMN-BP-pki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lre-tk-Ohm">
+                                <rect key="frame" x="96" y="52" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.75112452651515149" green="0.038435580565417377" blue="0.076206076839171577" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Compose Mail">
+                                    <color key="titleColor" red="0.96344023575290272" green="1" blue="0.95604902386257717" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.61985085227272729" green="0.031718212533418659" blue="0.062887577238723819" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="composeMail:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oI8-Ko-eGd"/>
+                                    <segue destination="vlB-Xw-w7X" kind="modal" id="Csm-Ce-Tlm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BeL-bz-wgO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="288"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="5HU-q9-f3i">
+            <objects>
+                <viewController storyboardIdentifier="sendMail" id="vlB-Xw-w7X" customClass="secondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjt-C6-9Pr"/>
+                        <viewControllerLayoutGuide type="bottom" id="41i-J0-8QR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZYd-RU-PKA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F46-Lq-Usm">
+                                <rect key="frame" x="102" y="52" width="116" height="33"/>
+                                <color key="backgroundColor" red="0.79312657828282829" green="0.040584855669133231" blue="0.080467436269492182" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Compose Mail">
+                                    <color key="titleColor" red="1" green="0.97816827773119164" blue="0.94988973417965095" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.051170716983160669" blue="0.1014559825289294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To :" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVa-JQ-IY1">
+                                <rect key="frame" x="16" y="112" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject :" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YkD-FC-oOy">
+                                <rect key="frame" x="16" y="150" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTX-vd-fGy">
+                                <rect key="frame" x="16" y="188" width="288" height="315"/>
+                                <color key="backgroundColor" red="0.90755208333333337" green="0.90755208333333337" blue="0.90755208333333337" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJx-mx-Glx">
+                                <rect key="frame" x="117" y="511" width="86" height="33"/>
+                                <color key="backgroundColor" red="0.7931265783" green="0.040584855670000003" blue="0.080467436269999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancle">
+                                    <color key="titleColor" red="1" green="0.97816827770000003" blue="0.9498897342" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.051170716980000003" blue="0.1014559825" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCancel:" destination="vlB-Xw-w7X" eventType="touchUpInside" id="RN1-YN-gFN"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="QuK-44-WDe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0X-lT-ybq">
+                                <rect key="frame" x="226" y="511" width="83" height="33"/>
+                                <color key="backgroundColor" red="0.084035277834776975" green="0.7931265783" blue="0.02965874262260134" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="1" green="0.97816827770000003" blue="0.9498897342" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.1299079706054459" green="1" blue="0.026180161959214687" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSend:" destination="vlB-Xw-w7X" eventType="touchUpInside" id="sEu-Rq-U7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cog-OC-SnS"/>
+                    <connections>
+                        <outlet property="txtField" destination="jTX-vd-fGy" id="qdK-EA-Mzj"/>
+                        <outlet property="txtSubject" destination="YkD-FC-oOy" id="guI-cV-0wX"/>
+                        <outlet property="txtTo" destination="iVa-JQ-IY1" id="x5M-GL-x9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMC-TH-kgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="288"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

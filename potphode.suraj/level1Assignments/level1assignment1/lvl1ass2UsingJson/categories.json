@@ -1,0 +1,108 @@
+{
+    "categories": [
+                   {
+                   "id": "1",
+                   "name": "Office Supplies",
+                   "products": [
+                                {
+                                "id": "11",
+                                "name": "Item11"
+                                },
+                                {
+                                "id": "12",
+                                "name": "Item12"
+                                },
+                                {
+                                "id": "13",
+                                "name": "Item13"
+                                },
+                                {
+                                "id": "14",
+                                "name": "Item14"
+                                },
+                                {
+                                "id": "15",
+                                "name": "Item15"
+                                }
+                                ]
+                   },
+                   {
+                   "id": "2",
+                   "name": "Safety Supplies",
+                   "products": [
+                                {
+                                "id": "21",
+                                "name": "Item21"
+                                },
+                                {
+                                "id": "22",
+                                "name": "Item22"
+                                },
+                                {
+                                "id": "23",
+                                "name": "Item23"
+                                },
+                                {
+                                "id": "24",
+                                "name": "Item24"
+                                },
+                                {
+                                "id": "25",
+                                "name": "Item25"
+                                }
+                                ]
+                   },
+                   {
+                   "id":"3",
+                   "name":"third",
+                   "products": [
+                                {
+                                "id": "31",
+                                "name": "Item31"
+                                },
+                                {
+                                "id": "32",
+                                "name": "Item32"
+                                },
+                                {
+                                "id": "33",
+                                "name": "Item33"
+                                },
+                                {
+                                "id": "34",
+                                "name": "Item34"
+                                },
+                                {
+                                "id": "35",
+                                "name": "Item35"
+                                }
+                                ]
+                   },
+                   {
+                   "id":"4",
+                   "name":"fourth",
+                   "products": [
+                                {
+                                "id": "41",
+                                "name": "Item41"
+                                },
+                                {
+                                "id": "42",
+                                "name": "Item42"
+                                },
+                                {
+                                "id": "43",
+                                "name": "Item43"
+                                },
+                                {
+                                "id": "44",
+                                "name": "Item44"
+                                },
+                                {
+                                "id": "45",
+                                "name": "Item45"
+                                }
+                                ]
+                   }
+                   ]
+}
